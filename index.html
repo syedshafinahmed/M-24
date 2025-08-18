@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1>DOM</h1>
+    <ul>
+        <li>Syed</li>
+        <li>Shafin</li>
+        <li>Ahmed</li>
+        <li>Dhruv</li>
+    </ul>
+    <script>
+        const student = {
+            name: 'Shafin',
+            id: 6151,
+            study: function(subject){
+                console.log("studying Subject: ", subject);
+            }
+        }
+
+        const liCollection = document.getElementsByTagName('li');
+        console.log(liCollection);
+        for(const li of liCollection){
+            console.log(li.innerText);
+        }
+    </script>
+    <script src="js/hello.js"></script>
 </body>
 </html>
